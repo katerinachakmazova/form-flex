@@ -7,57 +7,64 @@
   <title>Form</title>
 </head>
 <body>
-  <header>
-    <h1>Create an account</h1>
-    <p>We always keep your name and email address private.</p>
-  </header>
-  <main>
-    <form>
-      <div class="text-input">
-        <div class="text-input-el">
-          <input type="text" id="fname" placeholder="First name" required>
-        </div>
-        <div class="text-input-el">
-          <input type="text" id="lname" placeholder="Last name">
-        </div>
-        <div class="text-input-el">
-          <input type="text" id="dname" placeholder="Display Name">
-        </div>
-        <div class="text-input-el">
-          <input type="email" id="email" placeholder="Email Address" required>
-        </div>
-        <div class="text-input-el">
-          <input type="password" id="password" placeholder="Password" required>
-        </div>
-        <div class="text-input-el">
-          <input type="password" id="cpassword" placeholder="Password Confirmation" required>
-        </div>
+    <form class="form-container flex-form-container">
+      <div class="form-header-container">
+        <h1>Create an account</h1>
+        <p>We always keep your name and email address private.</p>
       </div>
-      <div class="radio-input">
-        <div class="radio-input-el">
-          <input type="radio" id="buyer" name="client">
-          <div class="radio-input-el-text">
-            <label for="buyer">Join As a Buyer</label>
-            <p>I am looking for a Name, Logo or Tagline for my business, brand or product.</p>
+      <div class="text-input-container flex-text-input-container">
+        <div class="text-input-column-container flex-text-input-column-container">
+          <div class="text-input-container-el">
+            <input type="text" id="fname" placeholder="First name" required>
+          </div>
+          <div class="text-input-container-el">
+            <input type="text" id="dname" placeholder="Display Name">
+          </div>
+          <div class="text-input-container-el">
+            <input type="password" id="password" placeholder="Password" required>
           </div>
         </div>
-        <div class="radio-input-el">
-          <input type="radio" id="seller" name="client">
-          <div class="radio-input-el-text">
-            <label for="seller">Join As a Creative or Marketplace Seller</label>
-            <p>I plane to submit name ideas, Logo designs or sell names in Domain Marketplace.</p>
+        <div class="text-input-column-container flex-text-input-column-container">
+          <div class="text-input-container-el">
+            <input type="text" id="lname" placeholder="Last name">
+          </div>
+          <div class="text-input-container-el">
+            <input type="email" id="email" placeholder="Email Address" required>
+          </div>
+          <div class="text-input-container-el">
+            <input type="password" id="cpassword" placeholder="Password Confirmation" required>
           </div>
         </div>
       </div>
-      <div class="checkbox-input">
-        <input type="checkbox" id="terms">
-        <label for="terms">Allow Squadhelp to send marketing/promotional offers from time to time</label>
+      <div class="radio-checkbox-container flex-radio-checkbox-container">
+        <div class="radio-wrapper flex-radio-wrapper">
+          <div class="radio-container flex-radio-container">
+            <div class="radio-button-container">
+              <input type="radio" id="buyer" name="client">
+            </div>
+            <div class="radio-text-container">
+              <label for="buyer">Join As a Buyer</label>
+              <p>I am looking for a Name, Logo or Tagline for my business, brand or product.</p>
+            </div>
+          </div>
+          <div class="radio-container flex-radio-container">
+            <div class="radio-button-container">
+              <input type="radio" id="seller" name="client">
+            </div>
+            <div class="radio-text-container">
+              <label for="seller">Join As a Creative or Marketplace Seller</label>
+              <p>I plane to submit name ideas, Logo designs or sell names in Domain Marketplace.</p>
+            </div>
+          </div>
+        </div>
+        <div class="checkbox-container flex-checkbox-container">
+          <input type="checkbox" id="terms">
+          <label for="terms">Allow Squadhelp to send marketing/promotional offers from time to time</label>
+        </div>
       </div>
-      <div class="button">
+      <div class="button-container">
         <button type="submit">Create an account</button>
       </div>
-
     </form>
-  </main>
 </body>
 </html>
